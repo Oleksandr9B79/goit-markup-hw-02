@@ -1,55 +1,70 @@
-.root {
+:root {
   --primary-text-color: #2f303a;
   --title-text-color: #212121;
   --accent-color: #2196f3;
 }
 
-.body {
+body {
   background-color: #ffffff;
   color: #212121;
-  font-family: roboto, Raleway, sans-serif, inherit;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.03em;
 }
 
 .link,
 .list {
   list-style: none;
-  text-align: left;
   text-decoration: none;
 }
 
 /* Site-nav */
 .logo {
   font-family: Raleway;
-  weight: 700;
   font-style: 700;
-  font-size: 26;
+  font-size: 26px;
   line-height: 1.2;
+  color: #2196f3;
 }
-
+.part-logo-white {
+  color: #ffffff;
+}
+.part-logo-black {
+  color: #212121;
+}
+/* Шапка */
+.site-nav .current {
+  color: #2196f3;
+}
 .site-nav .link {
   font-family: Roboto;
-  weight: 500;
-  color: #212121;
+  font-style: 500;
+  font-weight: 500;
+  color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.1;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+.site-nav .current {
+  color: var(--accent-color);
+}
+
 .cont .link {
   font-family: Roboto;
   color: #757575;
-  font-family: Roboto;
-  weight: 500;
   font-style: 500;
-  font-size: 14;
+  font-size: 14px;
   line-height: 1.2;
 }
+
 .cont .link:hover,
 .cont .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+
 /* Main */
 .decision {
   background: #2f303a;
@@ -57,50 +72,47 @@
 .decision-bg {
   color: #ffffff;
   font-family: Roboto;
-  weight: 900;
-  font-size: 44;
+  font-size: 44px;
   line-height: 1.4;
-  font: weight 900;
+  font-style: 900;
   text-transform: uppercase;
+  text-align: Center;
 }
 /* Button */
 .button-dec {
   font-family: Roboto;
   color: #ffffff;
-  weight: 700;
   font-style: 700;
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.9;
   cursor: pointer;
-  background: #2196f3;
+  background: var(--accent-color);
 }
 
 .text {
   color: #757575;
-  font-family: roboto;
-  weight: 400;
-  font-style: 400;
-  font-size: 16;
+  font-style: Regular;
+  font-family: Roboto;
+  font-size: 14px;
   line-height: 1.2;
 }
 
 .section-title {
-  color: #212121;
-  font-family: roboto;
-  weight: 700;
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: 700;
   font-style: 700;
-  font-size: 14;
+  font-size: 16px;
   line-height: 1.2;
 }
 
 /* Product */
 .product-second,
 .comands-second {
-  color: #212121;
-  font-family: roboto;
-  weight: 700;
+  color: var(--title-text-color);
+  font-family: Roboto;
   font-style: 700;
-  font-size: 36;
+  font-size: 36px;
   line-height: 1.2;
 }
 /* Comands */
@@ -109,68 +121,78 @@
 }
 .comands-title {
   font-family: Roboto;
-  weight: 500;
   font-style: 500;
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.2;
 }
 .text-com {
   color: #757575;
   font-family: Roboto;
-  weight: 500;
+  font-weight: 500;
   font-style: 700;
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.2;
 }
 /* Footer */
 .contact {
-  background-color: #2f303a;
+  background-color: var(--primary-text-color);
 }
 .adress {
   color: #ffffff;
   font-family: Roboto;
   font-style: 500;
-  weight: 400;
-  font-size: 14;
-  line-height: 1.7;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.77;
+  font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .adress .link:hover,
 .adress .link:focus {
   color: #2196f3;
 }
+.contact.link {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: 500;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+}
+.contact .link:hover,
+.contact .link:focus {
+  color: #2196f3;
+}
 
 /* Portfolio */
-.portfolio {
-}
+
 .portfolio-text {
   color: #212121;
   font-family: Roboto;
-  weight: 700;
-  font-style: 700;
-  font-size: 18;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 2;
 }
 
 .portfolio-work {
   color: #757575;
   font-family: Roboto;
-  weight: 400;
-  font-style: 400;
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.9;
 }
 .button-primary {
   font-family: Roboto;
-  color: #212121;
-  weight: 500;
+  color: var(--title-text-color);
+  font-weight: 500;
   font-style: 400;
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
 }
 .button-primary:hover,
 .button-primary:focus {
-  background: #2196f3;
+  background: var(--accent-color);
   color: #ffffff;
 }
