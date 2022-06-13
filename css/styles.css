@@ -12,6 +12,9 @@ body {
   letter-spacing: 0.03em;
 }
 
+li {
+  list-style-type: none;
+}
 .link,
 .list {
   list-style: none;
