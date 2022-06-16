@@ -86,7 +86,6 @@ li {
 .button-dec {
   font-family: Roboto;
   color: var(--background-position);
-  font-style: 700;
   font-size: 16px;
   line-height: 1.9;
   cursor: pointer;
@@ -105,8 +104,7 @@ li {
   color: var(--title-text-color);
   font-family: Roboto;
   font-weight: 700;
-  font-style: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -126,7 +124,6 @@ li {
 }
 .comands-title {
   font-family: Roboto;
-  font-style: 500;
   font-size: 16px;
   line-height: 1.2;
 }
